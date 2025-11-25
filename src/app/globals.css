@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.drop-cap::first-letter {
+  font-size: 2.75rem;
+  line-height: 1;
+  font-weight: 500;
+  float: left;
+  margin-right: 0.1rem;
+  margin-top: -0.8rem;
+}
+
+.link-muted {
+  color: rgb(64 64 64);
+  border-bottom: 1px dotted rgb(163 163 163);
+  padding-bottom: 1px;
+  transition: color 200ms;
+}
+
+.link-muted:hover {
+  color: rgb(23 23 23);
+}
