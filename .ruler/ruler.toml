@@ -1,0 +1,36 @@
+# Ruler Configuration File
+# See https://okigu.com/ruler for documentation.
+
+# Default agents to run when --agents is not specified
+default_agents = ["cursor", "codex"]
+
+# --- Global MCP Server Configuration ---
+[mcp]
+# Enable/disable MCP propagation globally (default: true)
+enabled = true
+# Global merge strategy: 'merge' or 'overwrite' (default: 'merge')
+merge_strategy = "overwrite"
+
+# --- MCP Server Definitions ---
+[mcp_servers.context7]
+command = "npx"
+args = ["-y", "@upstash/context7-mcp"]
+
+
+[mcp_servers.shadcn]
+command = "npx"
+args = ["shadcn@latest", "mcp"]
+
+
+[mcp_servers.better-auth]
+url = "https://mcp.chonkie.ai/better-auth/better-auth-builder/mcp"
+
+
+[mcp_servers.next-devtools]
+command = "npx"
+args = ["-y", "next-devtools-mcp@latest"]
+
+# --- Global .gitignore Configuration ---
+[gitignore]
+# Enable/disable automatic .gitignore updates (default: true)
+enabled = true

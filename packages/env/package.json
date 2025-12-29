@@ -1,0 +1,21 @@
+{
+  "name": "@missingstudio/env",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./server": "./src/server.ts",
+    "./web": "./src/web.ts"
+  },
+  "dependencies": {
+    "zod": "catalog:",
+    "@t3-oss/env-nextjs": "^0.13.1",
+    "@t3-oss/env-core": "^0.13.1",
+    "dotenv": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:",
+    "@types/bun": "catalog:",
+    "@missingstudio/config": "workspace:*"
+  }
+}
