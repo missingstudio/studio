@@ -1,0 +1,61 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Build outputs
+dist
+build
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env*.local
+
+# IDEs and editors
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Turbo
+.turbo
+
+# Better-T-Stack
+.alchemy
+
+# Testing
+coverage
+.nyc_output
+
+# Misc
+*.tgz
+.cache
+tmp
+temp
+
+# START Ruler Generated Files
+/.codex/config.json
+/.codex/config.json.bak
+/.codex/config.toml
+/.codex/config.toml.bak
+/.cursor/mcp.json
+/.cursor/mcp.json.bak
+/AGENTS.md
+/AGENTS.md.bak
+# END Ruler Generated Files

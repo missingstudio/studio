@@ -1,0 +1,9 @@
+{
+  "extends": "@missingstudio/config/tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@missingstudio/api/*": ["./src/*"]
+    }
+  }
+}
